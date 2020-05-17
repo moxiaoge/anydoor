@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Tiny NodeJS Static Web server",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",

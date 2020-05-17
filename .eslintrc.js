@@ -1,33 +1,24 @@
 module.exports = {
-    'env': {
-        'browser': true,
-        'commonjs': true,
-        'es6': true
-    },
     'extends': 'eslint:recommended',
+    'parser': 'babel-eslint',
+    'env': {
+        'browser': false,
+        'node': true,
+        'commonjs': true,
+        'es6': true,
+        'mocha': true
+    },
+    'parserOptions': {
+        'ecmaVersion': 6,
+        'sourceType': 'script'
+    },
     'globals': {
         'Atomics': 'readonly',
         'SharedArrayBuffer': 'readonly'
     },
-    'parserOptions': {
-        'ecmaVersion': 11
-    },
     'rules': {
-        'indent': [
-            'error',
-            4
-        ],
-        'linebreak-style': [
-            'error',
-            'unix'
-        ],
-        'quotes': [
-            'error',
-            'single'
-        ],
-        'semi': [
-            'error',
-            'always'
-        ]
+        'no-console': ['error', {
+            'allow': ['warn', 'error', 'info']
+        }]
     }
 };

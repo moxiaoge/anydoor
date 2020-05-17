@@ -1,1 +1,1 @@
-console.log(233);
+console.info(233);

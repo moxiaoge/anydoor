@@ -2,9 +2,14 @@
   "name": "anydoor",
   "version": "1.0.0",
   "description": "Tiny NodeJS Static Web server",
-  "main": "index.js",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor_linux": "bin/anydoor",
+    "anydoor": "src/index.js"
+  },
   "dependencies": {
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
